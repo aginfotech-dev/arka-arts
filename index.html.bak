@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arka Arts — Creative Design & Motion Studio</title>
+  <meta name="description" content="Arka Arts is a full-spectrum Creative Design & Motion Studio delivering design, illustration, and digital solutions that help brands stand out." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-a">A</span>RKA <span class="logo-arts">ARTS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk →</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Work</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="mobile-cta">Let's Talk →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </div>
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Creative Design &amp; Motion Studio
+        </div>
+        <h1 class="hero-title">
+          Creative Design.<br />
+          Motion Graphics.<br />
+          <em>Brand</em> Experiences.
+        </h1>
+        <p class="hero-sub">
+          We help ambitious brands stand out with powerful design, captivating motion and immersive digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">Explore Services →</a>
+          <a href="#portfolio" class="btn btn-ghost">View Our Work →</a>
+        </div>
+      </div>
+      <!-- RIGHT VISUAL -->
+      <div class="hero-right">
+        <div class="hero-visual">
+          <div class="hero-visual-scene">
+            <div class="geo-bg"></div>
+            <svg class="geo-a-svg" viewBox="0 0 360 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <!-- Left face: very dark stone -->
+                <linearGradient id="faceLeft" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#241008"/>
+                  <stop offset="60%" stop-color="#1a0c05"/>
+                  <stop offset="100%" stop-color="#0e0703"/>
+                </linearGradient>
+                <!-- Right face: catches warm light -->
+                <linearGradient id="faceRight" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#3a1c09"/>
+                  <stop offset="100%" stop-color="#1e0e05"/>
+                </linearGradient>
+                <!-- Apex top -->
+                <linearGradient id="faceApex" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" stop-color="#4a2410"/>
+                  <stop offset="100%" stop-color="#7a3e18"/>
+                </linearGradient>
+                <!-- Bottom inner glow (fire from inside) -->
+                <linearGradient id="innerGlow" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#E87722" stop-opacity="0"/>
+                  <stop offset="70%" stop-color="#C85510" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#E87722" stop-opacity="0.9"/>
+                </linearGradient>
+                <!-- Crossbar inner slot glow -->
+                <linearGradient id="slotGlow" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#E87722" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#C85510" stop-opacity="0.2"/>
+                </linearGradient>
+                <radialGradient id="apexGlow" cx="50%" cy="60%" r="50%">
+                  <stop offset="0%" stop-color="#E87722" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#E87722" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="baseGlow" cx="50%" cy="20%" r="50%">
+                  <stop offset="0%" stop-color="#E87722" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#E87722" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="4" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <filter id="strongGlow" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="8" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <!-- ── SHADOW / GROUND REFLECTION ── -->
+              <ellipse cx="180" cy="465" rx="120" ry="14"
+                fill="rgba(200,80,10,0.18)" filter="url(#strongGlow)"/>
+
+              <!-- ── LEFT LEG (dark face) ── -->
+              <polygon points="52,462 150,52 192,86 110,462"
+                fill="url(#faceLeft)" stroke="#1e0d05" stroke-width="0.8"/>
+
+              <!-- ── RIGHT LEG (light-catching face) ── -->
+              <polygon points="168,86 210,52 308,462 228,462"
+                fill="url(#faceRight)" stroke="#120805" stroke-width="0.8"/>
+              <!-- Right edge highlight strip -->
+              <polygon points="228,462 308,462 210,52 168,86"
+                fill="rgba(232,119,34,0.07)" stroke="rgba(232,119,34,0.28)" stroke-width="1.2"/>
+
+              <!-- ── APEX TOP CAP ── -->
+              <polygon points="174,48 186,28 198,48 186,56"
+                fill="url(#faceApex)" filter="url(#softGlow)"/>
+              <ellipse cx="186" cy="42" rx="22" ry="10"
+                fill="url(#apexGlow)" filter="url(#softGlow)"/>
+
+              <!-- ── CROSSBAR ── -->
+              <!-- Front face -->
+              <polygon points="118,272 242,272 232,312 128,312"
+                fill="#1c0e05" stroke="rgba(232,119,34,0.18)" stroke-width="0.8"/>
+              <!-- Top face of crossbar -->
+              <polygon points="120,268 240,268 242,272 118,272"
+                fill="#2e1609"/>
+              <!-- Inner glowing slot (the gap between the A legs) -->
+              <polygon points="128,312 134,298 226,298 232,312"
+                fill="url(#slotGlow)" opacity="0.6"/>
+
+              <!-- ── BASE INNER GLOW ── -->
+              <polygon points="112,462 228,462 222,442 118,442"
+                fill="url(#innerGlow)"/>
+              <ellipse cx="170" cy="462" rx="80" ry="8"
+                fill="url(#baseGlow)" filter="url(#strongGlow)" opacity="0.7"/>
+
+              <!-- ── EDGE LIGHT LINES ── -->
+              <!-- Left outer edge (dark) -->
+              <line x1="150" y1="52" x2="110" y2="462"
+                stroke="rgba(100,50,10,0.35)" stroke-width="1.2"/>
+              <!-- Right outer edge (brighter — catches ambient light) -->
+              <line x1="210" y1="52" x2="308" y2="462"
+                stroke="rgba(232,119,34,0.4)" stroke-width="1.8"/>
+              <!-- Crossbar top-left edge -->
+              <line x1="120" y1="268" x2="118" y2="272"
+                stroke="rgba(232,119,34,0.2)" stroke-width="1"/>
+
+              <!-- ── STONE TEXTURE CRACKS ── -->
+              <path d="M125 400 Q138 393 133 382 Q148 376 144 362"
+                stroke="rgba(255,255,255,0.038)" stroke-width="1.2" fill="none"/>
+              <path d="M262 350 Q254 342 267 332 Q260 320 270 310"
+                stroke="rgba(255,255,255,0.028)" stroke-width="1" fill="none"/>
+              <path d="M160 180 Q168 172 164 164"
+                stroke="rgba(255,255,255,0.022)" stroke-width="0.8" fill="none"/>
+              <path d="M240 240 Q232 234 238 226"
+                stroke="rgba(255,255,255,0.02)" stroke-width="0.8" fill="none"/>
+            </svg>
+          </div>
+          <!-- Rotating badge -->
+          <div class="rotating-badge">
+            <svg class="badge-ring" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+              <path id="textRing" d="M 90,90 m -68,0 a 68,68 0 1,1 136,0 a 68,68 0 1,1 -136,0" fill="none"/>
+              <text class="badge-ring-text">
+                <textPath href="#textRing" startOffset="0%">• INSPIRE • CREATE • ELEVATE •&nbsp;&nbsp;</textPath>
+              </text>
+            </svg>
+            <a href="#contact" class="badge-center-btn" aria-label="Contact us">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 16L16 4M16 4H7M16 4V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BRANDS -->
+  <div class="brands-bar">
+    <div class="container">
+      <p class="brands-label">Trusted by forward-thinking brands</p>
+      <div class="brands-list">
+        <span class="brand-item">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="9" r="3" fill="currentColor" opacity="0.5"/></svg>
+          luminous
+        </span>
+        <span class="brand-item brand-item--serif">visionary.</span>
+        <span class="brand-item">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M6 9h6M9 6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Cloudix
+        </span>
+        <span class="brand-item">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none"><path d="M2 14l4-8 3 6 3-10 4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          fluxo
+        </span>
+        <span class="brand-item">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><polygon points="9,2 16,6 16,12 9,16 2,12 2,6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          Sitemap
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="services-header-left">
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title">Solutions That<br /><em>Elevate</em> Your Brand</h2>
+        </div>
+        <div class="services-header-right">
+          <p>End-to-end creative services tailored to build strong brands and engaging digital experiences.</p>
+          <a href="#contact" class="link-arrow">View All Services →</a>
+        </div>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal" style="--d:0s">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" class="service-icon">
+              <path d="M10 14L20 24M10 24L20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="14" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 36h10M10 40h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M28 38h10M28 42h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Branding &amp; Identity</h3>
+          <p>Strategy-driven branding that builds recognition and trust.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal" style="--d:.07s">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" class="service-icon">
+              <path d="M24 6L40 16V32L24 42L8 32V16L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 6V42M8 16L24 26L40 16" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.45"/>
+            </svg>
+          </div>
+          <h3>3D Design &amp; Visualization</h3>
+          <p>Stunning 3D visuals and renders that bring ideas to life.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal" style="--d:.14s">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" class="service-icon">
+              <rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 18L30 24L20 30V18Z" fill="currentColor" opacity="0.65"/>
+            </svg>
+          </div>
+          <h3>Motion Graphics</h3>
+          <p>Engaging motion that tells your story and captivates audiences.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal" style="--d:.21s">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" class="service-icon">
+              <path d="M10 36L24 10L38 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 28h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M28 42c2-3 5-5 8-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Illustration</h3>
+          <p>Custom illustrations that add personality to your brand.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal" style="--d:.28s">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" class="service-icon">
+              <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 16h40" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.4"/>
+              <circle cx="10" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="16" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
+              <path d="M16 38h16M21 42h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, user-centric designs that deliver real results.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="industries section" id="industries">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Industries We Serve</div>
+        <h2 class="section-title">Trusted across<br /><em>every sector</em></h2>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-pill reveal" style="--d:0s">Corporate &amp; Enterprise</div>
+        <div class="industry-pill reveal" style="--d:.05s">Retail &amp; E-Commerce</div>
+        <div class="industry-pill reveal" style="--d:.1s">Tech &amp; SaaS</div>
+        <div class="industry-pill reveal" style="--d:.15s">Healthcare &amp; Wellness</div>
+        <div class="industry-pill reveal" style="--d:.2s">Education &amp; EdTech</div>
+        <div class="industry-pill reveal" style="--d:.25s">Gaming &amp; Entertainment</div>
+        <div class="industry-pill reveal" style="--d:.3s">Real Estate &amp; Architecture</div>
+        <div class="industry-pill reveal" style="--d:.35s">Hospitality &amp; Travel</div>
+        <div class="industry-pill reveal" style="--d:.4s">Music &amp; Media</div>
+        <div class="industry-pill reveal" style="--d:.45s">FMCG &amp; Lifestyle</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <div class="portfolio-header-left">
+          <div class="section-label">Featured Work</div>
+          <h2 class="section-title">Design That Speaks</h2>
+        </div>
+        <a href="#portfolio" class="link-arrow">View All Projects →</a>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="pf-filters reveal">
+        <button class="pf-filter active" data-filter="all">All Work</button>
+        <button class="pf-filter" data-filter="graphic">Graphic Design</button>
+        <button class="pf-filter" data-filter="motion">Motion Graphic</button>
+        <button class="pf-filter" data-filter="video">Video Editing</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="pf-grid" id="pfGrid">
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/skincare-1.jpg" data-title="Skincare Brand" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/skincare-1.jpg" alt="Skincare Brand 1" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Skincare Brand</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/skincare-2.jpg" data-title="Skincare Brand" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/skincare-2.jpg" alt="Skincare Brand 2" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Skincare Brand</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/skincare-3.jpg" data-title="Skincare Brand" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/skincare-3.jpg" alt="Skincare Brand 3" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Skincare Brand</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/skincare-4.jpg" data-title="Skincare Brand" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/skincare-4.jpg" alt="Skincare Brand 4" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Skincare Brand</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/skincare-5.jpg" data-title="Skincare Brand" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/skincare-5.jpg" alt="Skincare Brand 5" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Skincare Brand</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/skincare-6.jpg" data-title="Skincare Brand" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/skincare-6.jpg" alt="Skincare Brand 6" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Skincare Brand</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/street-1.jpg" data-title="Street Culture" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/street-1.jpg" alt="Street Culture 1" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Street Culture</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/street-2.jpg" data-title="Street Culture" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/street-2.jpg" alt="Street Culture 2" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Street Culture</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/street-3.jpg" data-title="Street Culture" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/street-3.jpg" alt="Street Culture 3" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Street Culture</h4></div>
+        </div>
+
+        <div class="pf-item" data-cat="graphic" data-type="local" data-src="/images/portfolio/street-4.jpg" data-title="Street Culture" data-label="Graphic Design">
+          <div class="pf-thumb"><img src="/images/portfolio/street-4.jpg" alt="Street Culture 4" loading="lazy" /><div class="pf-overlay"><span class="pf-zoom">⊕</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag">Graphic Design</span><h4>Street Culture</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="motion" data-type="video" data-id="1krSdhdHL7XkzJ0toFN_ryYi_pm3-aZb6" data-thumb="/images/portfolio/thumb-brand-reel.jpg" data-title="Brand Reel" data-label="Motion Graphic">
+          <div class="pf-thumb pf-thumb--video"><div class="pf-video-bg"><img src="/images/portfolio/thumb-brand-reel.jpg" class="pf-vthumb" alt="Brand Reel" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--motion">Motion Graphic</span><h4>Brand Reel</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="motion" data-type="video" data-id="14WdhZfftGcEKvnB2LYmgSZlUXBtPEisO" data-thumb="/images/portfolio/thumb-explainer.jpg" data-title="Explainer Video" data-label="Motion Graphic">
+          <div class="pf-thumb pf-thumb--video"><div class="pf-video-bg"><img src="/images/portfolio/thumb-explainer.jpg" class="pf-vthumb" alt="Explainer Video" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--motion">Motion Graphic</span><h4>Explainer Video</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="motion" data-type="video" data-id="10sITWSSzARtGfhjWldGpR1wS9DPkEh4s" data-thumb="/images/portfolio/thumb-groww.jpg" data-title="Groww UI Animation" data-label="Motion Graphic">
+          <div class="pf-thumb pf-thumb--video"><div class="pf-video-bg"><img src="/images/portfolio/thumb-groww.jpg" class="pf-vthumb" alt="Groww UI Animation" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--motion">Motion Graphic</span><h4>Groww UI Animation</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="motion" data-type="video" data-id="1KueVvrcFta48Mv9aCkBzvnMKvkXRM32B" data-thumb="/images/portfolio/thumb-hireme.jpg" data-title="Hire Me Reel" data-label="Motion Graphic">
+          <div class="pf-thumb pf-thumb--video"><div class="pf-video-bg"><img src="/images/portfolio/thumb-hireme.jpg" class="pf-vthumb" alt="Hire Me Reel" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--motion">Motion Graphic</span><h4>Hire Me Reel</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="motion" data-type="video" data-id="1lQRxZcT8jIgDFPgErGlOs7wRU7MlC2it" data-thumb="/images/portfolio/thumb-twitter-x.jpg" data-title="Twitter → X Rebrand" data-label="Motion Graphic">
+          <div class="pf-thumb pf-thumb--video"><div class="pf-video-bg"><img src="/images/portfolio/thumb-twitter-x.jpg" class="pf-vthumb" alt="Twitter X Rebrand" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--motion">Motion Graphic</span><h4>Twitter → X Rebrand</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="video" data-type="video" data-id="18UO1NL4YpME8ayYN6b2MjDu9knVhWJmu" data-thumb="/images/portfolio/thumb-downside-biz.jpg" data-title="Downside of Business" data-label="Video Editing">
+          <div class="pf-thumb pf-thumb--video pf-thumb--edit"><div class="pf-video-bg"><img src="/images/portfolio/thumb-downside-biz.jpg" class="pf-vthumb" alt="Downside of Business" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--edit">Video Editing</span><h4>Downside of Business</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="video" data-type="video" data-id="1aeGMKnJ9PhzSTN18-1LV0OcCk-WFzn1a" data-thumb="/images/portfolio/thumb-fitness.jpg" data-title="Fitness Coach" data-label="Video Editing">
+          <div class="pf-thumb pf-thumb--video pf-thumb--edit"><div class="pf-video-bg"><img src="/images/portfolio/thumb-fitness.jpg" class="pf-vthumb" alt="Fitness Coach" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--edit">Video Editing</span><h4>Fitness Coach</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="video" data-type="video" data-id="1OK55NMjJWI2fzc1ruFb8ArMKkVC8wHKF" data-thumb="/images/portfolio/thumb-health.jpg" data-title="Health Optimization" data-label="Video Editing">
+          <div class="pf-thumb pf-thumb--video pf-thumb--edit"><div class="pf-video-bg"><img src="/images/portfolio/thumb-health.jpg" class="pf-vthumb" alt="Health Optimization" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--edit">Video Editing</span><h4>Health Optimization</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="video" data-type="video" data-id="1U9yz5XU3mfD6iW4ZF15CbtUZindkVFIA" data-thumb="/images/portfolio/thumb-ugc.jpg" data-title="Studio Quality UGC" data-label="Video Editing">
+          <div class="pf-thumb pf-thumb--video pf-thumb--edit"><div class="pf-video-bg"><img src="/images/portfolio/thumb-ugc.jpg" class="pf-vthumb" alt="Studio Quality UGC" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--edit">Video Editing</span><h4>Studio Quality UGC</h4></div>
+        </div>
+
+        <div class="pf-item pf-item--video" data-cat="video" data-type="video" data-id="1cBvLES1BCq6gOBCdJtvhFvBNzB5K7nXt" data-thumb="/images/portfolio/thumb-invest.jpg" data-title="Where to Invest" data-label="Video Editing">
+          <div class="pf-thumb pf-thumb--video pf-thumb--edit"><div class="pf-video-bg"><img src="/images/portfolio/thumb-invest.jpg" class="pf-vthumb" alt="Where to Invest" loading="lazy"/><div class="pf-play">▶</div></div><div class="pf-overlay"><span class="pf-zoom">▶ Play</span></div></div>
+          <div class="pf-info"><span class="pf-cat-tag pf-cat-tag--edit">Video Editing</span><h4>Where to Invest</h4></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="pf-modal" id="pfModal">
+    <div class="pf-modal-backdrop" id="pfBackdrop"></div>
+    <div class="pf-modal-box">
+      <button class="pf-modal-close" id="pfClose">✕</button>
+      <div class="pf-modal-label" id="pfModalLabel"></div>
+      <h3 class="pf-modal-title" id="pfModalTitle"></h3>
+      <div class="pf-modal-media" id="pfModalMedia"></div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" class="stat-svg">
+              <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M11 20c1.5-2 2.5-3 5-3s3.5 1 5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="12" cy="13" r="1.5" fill="currentColor"/>
+              <circle cx="20" cy="13" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Creative Services</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" class="stat-svg">
+              <path d="M16 3L29 10.5V21.5L16 29L3 21.5V10.5L16 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M16 3V29M3 10.5L16 18L29 10.5" stroke="currentColor" stroke-width="1" stroke-opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Industries Served</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" class="stat-svg">
+              <circle cx="16" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="7" cy="13" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="25" cy="13" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M3 27c0-4.4 1.8-6 4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M29 27c0-4.4-1.8-6-4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M8 27c0-4.4 3-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" class="stat-svg">
+              <path d="M16 3l3.5 8.5H29l-7.5 5.5 2.5 8L16 20l-8 5 2.5-8L3 11.5h9.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" id="about">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-content reveal">
+          <div class="section-label">Let's Create Together</div>
+          <h2>Have a project<br />in <em>mind?</em></h2>
+          <p>Let's bring your ideas to life with creativity, strategy and the right visuals.</p>
+          <a href="#contact" class="btn btn-primary">Start a Project →</a>
+        </div>
+        <div class="cta-visual reveal" style="--d:.18s">
+          <div class="cta-visual-scene">
+            <div class="cta-orb-1"></div>
+            <div class="cta-orb-2"></div>
+            <div class="cta-monitor">
+              <div class="cta-monitor-screen">
+                <div class="cta-screen-line s1"></div>
+                <div class="cta-screen-line s2"></div>
+                <div class="cta-screen-block sb1"></div>
+                <div class="cta-screen-block sb2"></div>
+                <div class="cta-screen-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div id="process"></div>
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Ready to <em>Partner?</em></h2>
+          <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+          <div class="contact-links">
+            <a href="mailto:info@arkaarts.com" class="contact-link">
+              <div class="contact-link-icon">✉</div>
+              <div>
+                <span class="cl-label">Email Us</span>
+                <span class="cl-val">info@arkaarts.com</span>
+              </div>
+            </a>
+            <a href="tel:+918178536374" class="contact-link">
+              <div class="contact-link-icon">📞</div>
+              <div>
+                <span class="cl-label">Call Us</span>
+                <span class="cl-val">+91 81785 36374</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal" style="--d:.2s">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Brand</label>
+              <input type="text" id="company" name="company" placeholder="Your company name" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Branding &amp; Identity</option>
+                <option>3D Design &amp; Visualization</option>
+                <option>Motion Graphics</option>
+                <option>Illustration</option>
+                <option>UI/UX Design</option>
+                <option>Video Editing</option>
+                <option>Multiple Services / Retainer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe your project, goals, and timeline..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-a">A</span>RKA <span class="logo-arts">ARTS</span>
+          </a>
+          <p class="footer-copy">© 2026 ARKA ARTS. All rights reserved.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Branding</a></li>
+            <li><a href="#services">Motion Graphics</a></li>
+            <li><a href="#services">3D Visualization</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#portfolio">Case Studies</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Behance">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M7.5 11c1.7 0 2.9-.8 2.9-2.3S9.2 6.5 7.5 6.5H3v4.5h4.5zm.3 1.5H3V18h5c1.9 0 3.1-1 3.1-2.8S9.6 12.5 7.8 12.5zM15.5 9c-2.8 0-4.5 2-4.5 4.8s1.7 4.7 4.5 4.7c2 0 3.4-.9 4.1-2.6h-2c-.4.8-1.1 1.2-2.1 1.2-1.4 0-2.3-.9-2.4-2.4H20c.1-3.3-1.6-5.7-4.5-5.7zm-2.4 4c.2-1.3 1-2.1 2.3-2.1 1.2 0 2 .8 2.1 2.1h-4.4zm4.4-6h-4V8.5h4V7z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M21.8 8s-.2-1.4-.8-2c-.7-.8-1.6-.8-2-.8C16.3 5 12 5 12 5s-4.3 0-7 .2c-.4.1-1.3.1-2 .9-.6.5-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.7.8 1.7.7 2.2.8C6.7 19 12 19 12 19s4.3 0 7-.2c.4-.1 1.3-.1 2-.9.6-.5.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
