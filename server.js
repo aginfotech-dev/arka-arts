@@ -1,10 +1,19 @@
 require('dotenv').config();
-const express = require('express');
-const { Resend } = require('resend');
-const cors    = require('cors');
+const express    = require('express');
+const nodemailer = require('nodemailer');
+const cors       = require('cors');
 
-const app    = express();
-const resend = new Resend(process.env.RESEND_API_KEY);
+const app = express();
+
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: true,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 app.use(express.json());
 app.use(cors());
@@ -18,9 +27,10 @@ app.post('/contact', async (req, res) => {
   }
 
   try {
-    await resend.emails.send({
-      from: 'Arka Arts <onboarding@resend.dev>',
+    const info = await transporter.sendMail({
+      from: `Arka Arts <${process.env.SMTP_USER}>`,
       to:   process.env.TO_EMAIL,
+      cc:   email,
       replyTo: email,
       subject: `New Enquiry from ${fname} ${lname}`,
       html: `
@@ -35,9 +45,10 @@ app.post('/contact', async (req, res) => {
         <p style="white-space:pre-wrap;background:#f5f5f5;padding:12px;border-radius:6px;">${message || '—'}</p>
       `,
     });
+    console.log('SMTP accepted:', info.accepted, '| rejected:', info.rejected, '| response:', info.response);
     res.json({ ok: true });
   } catch (err) {
-    console.error('Resend error:', err.message);
+    console.error('SMTP error:', err.message);
     res.status(500).json({ ok: false, error: err.message });
   }
 });
