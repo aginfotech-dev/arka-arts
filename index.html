@@ -480,6 +480,9 @@
             <option>Illustration &amp; Digital Art</option>
             <option>Social Media Graphics</option>
             <option>3D Visualization</option>
+            <option>Startup Launch Kit</option>
+            <option>Full Brand Package</option>
+            <option>Growth Retainer</option>
             <option>Multiple Services / Retainer</option>
           </select>
         </div>
@@ -544,6 +547,14 @@ function toggleFaq(el){
   const isOpen = item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
+}
+
+// ── PRE-SELECT SERVICE FROM ?service= QUERY PARAM ───────────
+const preselect = new URLSearchParams(location.search).get('service');
+if (preselect) {
+  const serviceSelect = document.getElementById('service');
+  const match = Array.from(serviceSelect.options).find(o => o.value === preselect);
+  if (match) serviceSelect.value = preselect;
 }
 </script>
 </body>
